@@ -1,5 +1,35 @@
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+$b: 'TahomaBold';
+$r: 'TahomaRegular';
+$trb: 'TrebuchetMS';
+
+
+@font-face {
+font-family: 'TahomaBold';
+src: url('../fonts/TahomaBold.eot') format('embedded-opentype'),
+url('../fonts/TahomaBold.woff2') format('woff2'),
+url('../fonts/TahomaBold.woff') format('woff'),
+url('../fonts/TahomaBold.ttf') format('truetype'),
+url('../fonts/TahomaBold.svg') format('svg');
+font-weight: normal;
+}
+
+@font-face {
+font-family: 'TahomaRegular';
+src: url('../fonts/TahomaRegular.eot') format('embedded-opentype'),
+url('../fonts/TahomaRegular.woff2') format('woff2'),
+url('../fonts/TahomaRegular.woff') format('woff'),
+url('../fonts/TahomaRegular.ttf') format('truetype'),
+url('../fonts/TahomaRegular.svg') format('svg');
+font-weight: normal;
+}
+
+
+@font-face {
+font-family: 'TrebuchetMS';
+src: url('../fonts/TrebuchetMS/TrebuchetMS.eot') format('embedded-opentype'),
+url('../fonts/TrebuchetMS/TrebuchetMS.woff2') format('woff2'),
+url('../fonts/TrebuchetMS/TrebuchetMS.woff') format('woff'),
+url('../fonts/TrebuchetMS/TrebuchetMS.ttf') format('truetype'),
+url('../fonts/TrebuchetMS/TrebuchetMS.svg') format('svg');
+font-weight: normal;
+}
