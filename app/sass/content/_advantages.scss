@@ -1,0 +1,142 @@
+.advantages{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  background-color: #e8e8e8;
+  padding: 15px 0 30px;
+  box-sizing: border-box;
+  .title{
+    margin-top: -110px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.advantages__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+
+}
+
+.advantages__wrap_item{
+  width: 33.3%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 0 82px;
+  box-sizing: border-box;
+  .title{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #575757;
+    font-family: $b;
+    line-height: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+  }
+  p{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #575757;
+    line-height: 1.75;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .thumb{
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 58px;
+    height: 59px;
+    background-position: -10px -10px;
+    z-index: 10;
+
+  }
+  .sprites1{
+    background-image: url("../img/icons/sprites1.png");
+  }
+  .sprites2{
+    background-image: url("../img/icons/sprites2.png");
+  }
+  .sprites3{
+    background-image: url("../img/icons/sprites3.png");
+    width: 63px;
+  }
+  .sprites4{
+    background-image: url("../img/icons/sprites4.png");
+    width: 30px;
+    height: 69px;
+  }
+  .sprites5{
+    background-image: url("../img/icons/sprites5.png");
+    width: 43px;
+  }
+  .sprites6{
+    background-image: url("../img/icons/sprites6.png");
+    width: 65px;
+  }
+}
+
+
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  background-color: #4e65a6;
+  margin: 28.87px 0;
+  border-left: solid 2px #4e65a6;
+  border-right: solid 2px #4e65a6;
+  text-align: center;
+  display: inline-block;
+  float: none;
+  margin: 80px auto 60px;
+  cursor: pointer;
+  &:hover{
+    background-color: #fff;
+    .thumb{
+      background-position: -88px -10px;
+    }
+    .sprites4{
+      background-position: -60px -10px;
+    }
+    .sprites5{
+      background-position: -72px -10px;
+    }
+    .sprites6{
+      background-position: -93px -10px;
+    }
+  }
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 12.6447px;
+}
+
+.hexagon:before {
+  top: -36.3553px;
+  border-top: solid 2.8284px #4e65a6;
+  border-right: solid 2.8284px #4e65a6;
+}
+
+.hexagon:after {
+  bottom: -36.3553px;
+  border-bottom: solid 2.8284px #4e65a6;
+  border-left: solid 2.8284px #4e65a6;
+}

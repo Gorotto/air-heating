@@ -24,9 +24,8 @@ h2{
   position: relative;
   font-size: 30px;
   font-weight: 700;
-  line-height: 16px;
   color: #4e65a6;
-  font-family: #b;
+  font-family: $b;
   text-align: center;
   span{
     color: #fb2f2f;
@@ -39,7 +38,7 @@ h2{
       height: 2px;
       display: inline-block;
       position: absolute;
-      bottom: 0;
+      bottom: -20px;
     }
   }
 
@@ -51,6 +50,6 @@ h2{
     height: 2px;
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
   }
 }
