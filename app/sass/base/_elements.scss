@@ -9,3 +9,48 @@
   float: left;
   margin-right: 5px;
 }
+
+.title {
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+h2{
+  // width: 100%;
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #4e65a6;
+  font-family: #b;
+  text-align: center;
+  span{
+    color: #fb2f2f;
+    &:before{
+      content: "";
+      width: 50%;
+      left: 0;
+
+      background-color: #4e65a6;
+      height: 2px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &:after{
+    content: "";
+    width: 50%;
+    left: 50%;
+    background-color: #fb2f2f;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+}
