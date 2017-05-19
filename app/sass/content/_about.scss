@@ -4,6 +4,13 @@
   position: relative;
   text-align: center;
   background-color: #899dd6;
+  padding: 50px 0;
+  box-sizing: border-box;
+  .title {
+    position: absolute;
+    left: 0;
+    margin-top: -129px;
+  }
 }
 
 .about__wrap{
@@ -39,5 +46,46 @@
     line-height: 16px;
     font-family: $b;
     color: #fff;
+  }
+}
+
+.about-items{
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 60px;
+}
+
+.about-item{
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  .thumb{
+    width: 150px;
+    height: 160px;
+    float: none;
+    margin: 0 auto 20px;
+    display: inline-block;
+  }
+  span{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fffefe;
+    font-family: $b;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 16px;
+
+  }
+  p{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fffefe;
+    font-family: $r;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
   }
 }
