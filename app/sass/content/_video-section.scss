@@ -50,7 +50,18 @@
     text-align: center;
     color: #fff;
     font-family: $r;
+    .down-arrow{
+      background-image: url("../img/icons/down-arrow.png");
+      width: 40px;
+      height: 21px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: absolute;
+      margin-top: 100px;
+      left: 50%;
+    }
   }
+
 }
 
 .video-section__wrap{

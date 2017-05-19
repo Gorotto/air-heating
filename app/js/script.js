@@ -13,7 +13,7 @@ $(document).ready(function () {
    slidesToScroll: 1,
    asNavFor: '.slider-for',
    dots: false,
-
+  arrows: false,
    centerMode: true,
    focusOnSelect: true
  });
@@ -29,4 +29,15 @@ $(document).ready(function () {
 
 	});
  /*popup*/
+
+ /*smoothScroll*/
+   $('.smoothScroll').click(function (event) {/*функция прокрутки на блок страницы при клике по элементам меню */
+    event.preventDefault();
+    var href = $(this).attr('href');
+    var target = $(href);
+    var top = target.offset().top;
+    $('html,body').animate({scrollTop: top}, 1000);
+    return false;
+  });
+ /*smoothScroll*/
 });
