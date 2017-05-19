@@ -29,8 +29,8 @@
 }
 
 .header__logo{
-  margin-left: 110px;
-  width: 186px;
+  // margin-left: 110px;
+  width: 162px;
   height: 70px;
   float: left;
   position: relative;
@@ -42,7 +42,7 @@
 }
 
 .header__top{
-  width: calc(100% - 306px);
+  width: calc(100% - 172px);
   float: left;
   position: relative;
   margin-top: 2px;
@@ -105,7 +105,7 @@
 }
 
 .header__menu{
-  width: calc(100% - 306px);
+  width: calc(100% - 172px);
   float: left;
   position: relative;
   padding: 0;
