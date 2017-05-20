@@ -3,6 +3,11 @@
   float: left;
   position: relative;
   text-align: center;
+  padding: 110px 0 10px;
+  .title {
+    position: absolute;
+    margin-top: -79px;
+  }
 }
 .touchscreen_info{
   width: 55%;
@@ -67,6 +72,9 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+  }
+  .error-inp{
+    border: 1px solid #ff0000;
   }
   span{
     background-repeat: no-repeat;
