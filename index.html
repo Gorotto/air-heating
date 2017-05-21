@@ -6,11 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!--для масштабируемых моделей-->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--для немасштабируемых моделей-->
-    <meta name="viewport" content="width=1366">
-    <!--для ссылок с мобильными телефонами-->
+
     <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
     <title></title>
+     <link rel="shortcut icon" href="img/favicon.ico" type="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet" type="text/css">
     <link href="css/slick.css" rel="stylesheet" type="text/css">
@@ -25,47 +25,14 @@
 
 <!-- end html_open.html-->
 
-<!-- start header.html-->
-<section class="header">
-  <div class="container">
-    <div class="header__logo">
-      <img src="img/icons/logo.png" alt="">
-    </div>
-    <div class="header__top">
-      <a href="tel:+380442293377"><span class="tel-icon"></span>+38 (044) 229-33-77 </a>
-      <a href="tel:+380444687537"><span class="tel-icon"></span>+38 (044) 468-75-37 </a>
-      <button class="toggle_mnu">
-            <span class="sandwich">
-              <span class="sw-topper"></span>
-              <span class="sw-bottom"></span>
-              <span class="sw-footer"></span>
-            </span>
-        </button>
-      <select>
-        <option value="">Русский</option>
-        <option value="">Украинский</option>
-      </select>
-      <a href="" class="header__callback">Связаться с нами</a>
-  </div>
-  <ul class="header__menu">
-    <li class="active"><a href="">Как это работает</a></li>
-    <li><a href="#go_advantages" class="smoothScroll">Преимущества  </a></li>
-    <li><a href="#go_stages" class="smoothScroll">Этапы работ </a></li>
-    <li><a href="#go_gallery" class="smoothScroll">Наши работы </a></li>
-    <li><a href="#go_option" class="smoothScroll">Опции</a></li>
-    <li><a href="#go_about" class="smoothScroll">О нас  </a></li>
-    <li><a href="#go_contacts" class="smoothScroll">Контакты</a></li>
-  </ul>
-</section>
 
-<!-- end header.html-->
 <!-- start video-section.html-->
 <section class="video-section">
   <div class="container">
       <div class="video-section__wrap">
         <h1>Воздушное отопление</h1>
         <p><span>по северной американской технологии</span> <br> для <br>частных домов, коттеджей, офисов и <br>квартир<br> по всей Украине</p>
-        <a href="">Заказать расчет стоимости воздушного отопления
+        <a href="" class="open_modal">Заказать расчет стоимости воздушного отопления
           <span class="down-arrow"></span>
         </a>
 
@@ -126,8 +93,8 @@
     <div class="advantages__wrap">
       <div class="advantages__wrap_item">
         <div class="hexagon">
-          <div class="thumb sprites1">
-            <!-- тут будет картинка -->
+          <div class="thumb ">
+            <!-- <img src="http://83.gt2.vkadre.ru/assets/thumbnails/b36ddea826235394.130.vk.jpg" data-full="http://cs13425.vkontakte.ru/u16929304/video/s_c4821188.jpg"> -->
           </div>
         </div>
         <span class="title">Экономичность</span>
@@ -322,22 +289,23 @@
 компенсацию стоимости проектных работ и
 программируемый тачскрин термостат в подарок.</p>
 <span class="touchscreen_info_title">Акция закончится через:</span>
+<div class="my-clock"></div>
     </div>
     <div class="touchscreen__form">
       <span>ПРИМИТЕ УЧАСТИЕ В АКЦИИ</span>
       <p>Оставьте Ваши контактные данные, наш менеджер свяжется с Вами в ближайшее время</p>
       <form action="">
-        <div class="form-row">
+        <div class="form-row error-inp">
           <span class="user-pic-icon"></span>
-          <input class="name-inp error-inp"  type="text" placeholder="Ваше имя">
+          <input class="name-inp "  type="text" placeholder="Ваше имя">
         </div>
-        <div class="form-row">
+        <div class="form-row error-inp">
           <span class="tel-pic-icon"></span>
-          <input class="phone-valid error-inp" type="text" placeholder="Номер телефона">
+          <input class="phone-valid " type="text" placeholder="Номер телефона">
         </div>
-        <div class="form-row">
+        <div class="form-row error-inp">
           <span class="mail-pic-icon"></span>
-          <input type="text"  class="error-inp" placeholder="Ваш e-mail">
+          <input type="text"  placeholder="Ваш e-mail">
         </div>
         <button>Отправить</button>
       </form>

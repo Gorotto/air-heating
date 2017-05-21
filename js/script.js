@@ -53,74 +53,7 @@ function init() {
 
        center: new google.maps.LatLng(50.517441, 30.467305),
 
-  //      styles: [{
-  //              featureType: "administrative",
-  //              elementType: "all",
-  //              stylers: [{hue: "#ff0000"}]
-  //          }, {
-  //              featureType: "administrative",
-  //              elementType: "labels.text.fill",
-  //              stylers: [{color: "#444444"}]
-  //          },
-   //
-  //          {
-  //              featureType: "administrative.country",
-  //              elementType: "geometry.fill",
-  //              stylers: [{visibility: "off"}]
-  //          }, {
-  //              featureType: "administrative.country",
-  //              elementType: "geometry.stroke",
-  //              stylers: [{visibility: "simplified"}]
-  //          }, {featureType: "landscape", elementType: "all", stylers: [{color: "#fffffa"}]}, {
-  //              featureType: "poi",
-  //              elementType: "all",
-  //              stylers: [{visibility: "off"}]
-  //          },
-  //          {
-  //              "featureType": "poi",
-  //              "elementType": "all",
-  //              "stylers": [
-  //                  {
-  //                      "visibility": "off"
-  //                  }
-  //              ]
-  //          },
-  //  //  {
-  //  //             featureType: "poi",
-  //  //             elementType: "labels.icon",
-  //  //             stylers: [{visibility: "on"}, {color: "#dd2020"}]
-  //  //         },
-  //           {
-  //              featureType: "road",
-  //              elementType: "all",
-  //              stylers: [{saturation: -100}, {lightness: 45}]
-  //          }, {
-  //              featureType: "road.highway",
-  //              elementType: "all",
-  //              stylers: [{visibility: "off"}]
-  //          }, {
-  //              featureType: "road.arterial",
-  //              elementType: "labels.icon",
-  //              stylers: [{visibility: "off"}]
-  //          }, {
-  //              featureType: "transit",
-  //              elementType: "all",
-  //              stylers: [{visibility: "off"}]
-  //          }, {
-  //              featureType: "transit.station.airport",
-  //              elementType: "all",
-  //              stylers: [{visibility: "off"}, {color: "#edd5d5"}]
-  //          },
-  //          {
-  //            featureType: "poi.business",
-  //             elementType: "labels",
-  //             stylers: [{ visibility: "off" }]
-  //          },
-  //           {
-  //              featureType: "water",
-  //              elementType: "all",
-  //              stylers: [{color: "#f5f5f5"}, {visibility: "on"}, {weight: "8.25"}]
-  //          }]
+
 
    };
 
@@ -139,6 +72,75 @@ function init() {
 
 }
 
+
+  /*modal*/
+
+      $('.open_modal').click( function(event){ // лoвим клик пo ссылки с id="go"
+        event.preventDefault(); // выключaем стaндaртную рoль элементa
+        $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+          function(){ // пoсле выпoлнения предъидущей aнимaции
+            $('.modals')
+              .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+              .animate({opacity: 1}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+        });
+      });
+      /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+      $('.modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+        $('.modals')
+          .animate({opacity: 0}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+            function(){ // пoсле aнимaции
+              $(this).css('display', 'none'); // делaем ему display: none;
+              $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+            }
+          );
+      });
+
+  /*modal*/
+
+
+  /*clock*/
+  var clock;
+
+  $(document).ready(function() {
+      clock = new FlipClock($('.my-clock'), 86400, {
+          // clockFace: 'Counter',
+          autoStart: true,
+          countdown: true,
+          callbacks: {
+              stop: function() {
+                  clock.setTime(86400);
+                  clock.start();
+              }
+          }
+      });
+
+  });
+  /*clock*/
+
+
+  /*fixed menu*/
+  $(window).scroll(function () {
+
+    if($(this).scrollTop() >= 250){
+    $('.header').addClass('fixed_header');
+    $('.fixed-button').addClass('fixed-button-block');
+
+    }
+    else {
+    $('.header').removeClass('fixed_header');
+    $('.fixed-button').removeClass('fixed-button-block');
+    }
+    });
+  /*fixed menu*/
+
+//   $('img').hover(
+//     function(){
+//          this.src = this.getAttribute('data-full');
+//     },function(){
+//    this.src = this.getAttribute('data-full').remove();
+// });
+
+
 });
 
 jQuery(function($){
@@ -155,7 +157,7 @@ $('.name-inp').on('keyup keypress', function(e) {
     }
 });
   /*valid name input*/
-
-  $('video').click(function(){
-     this.play();
-   });
+  //
+  // $('video').click(function(){
+  //    this.play();
+  //  });
