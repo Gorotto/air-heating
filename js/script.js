@@ -18,6 +18,12 @@ $(document).ready(function () {
    focusOnSelect: true
  });
 
+ $('.advantages__wrap_slider').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1
+});
+
  /*popup*/
  $('.image-popup-vertical-fit').magnificPopup({
 		type: 'image',
@@ -106,6 +112,7 @@ function init() {
           // clockFace: 'Counter',
           autoStart: true,
           countdown: true,
+         language:'ru-ru',
           callbacks: {
               stop: function() {
                   clock.setTime(86400);
@@ -132,14 +139,18 @@ function init() {
     }
     });
   /*fixed menu*/
-
-//   $('img').hover(
-//     function(){
-//          this.src = this.getAttribute('data-full');
-//     },function(){
-//    this.src = this.getAttribute('data-full').remove();
-// });
-
+  /*img hover*/
+  $('img').hover(
+    function(){
+      var imgsrc = $(this).attr('src');
+      $(this).attr('src',$(this).attr('data-full'));
+      $(this).attr('data-full',imgsrc);
+    },function(){
+      var imgsrc = $(this).attr('src');
+      $(this).attr('src',$(this).attr('data-full'));
+      $(this).attr('data-full',imgsrc);
+});
+  /*img hover*/
 
 });
 
@@ -157,6 +168,7 @@ $('.name-inp').on('keyup keypress', function(e) {
     }
 });
   /*valid name input*/
+
   //
   // $('video').click(function(){
   //    this.play();
