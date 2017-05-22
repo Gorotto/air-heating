@@ -167,9 +167,31 @@ $('.name-inp').on('keyup keypress', function(e) {
         return (letters.indexOf(String.fromCharCode(e.which))!=-1);
     }
 });
-  /*valid name input*/
 
-  //
-  // $('video').click(function(){
-  //    this.play();
-  //  });
+
+
+/*NEW*/ 
+/*hamburger*/
+var windowWidth = $(window).width();
+
+    $(".toggle_mnu").click(function () {
+        $(".sandwich").toggleClass("active");
+    });
+
+    if (windowWidth < 769) {
+        $(".header__menu ul a").click(function () {
+            $(".header__menu").fadeOut(600);
+            $(".sandwich").toggleClass("active").append("<span>");
+        });
+
+        $(".toggle_mnu").click(function () {
+            if ($(".header__menu").is(":visible")) {
+                $(".header__menu").fadeOut(600);
+                $(".header__menu li a").removeClass("fadeInUp animated");
+            } else {
+                $(".header__menu").fadeIn(600);
+                $(".header__menu li a").addClass("fadeInUp animated");
+            }
+        });
+    }
+/*hamburger*/

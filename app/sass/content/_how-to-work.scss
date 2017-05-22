@@ -3,29 +3,33 @@
   float: left;
   position: relative;
   background-color: #fff;
-  padding: 45px 0 150px;
+  padding: 45px 0 185px;
   box-sizing: border-box;
+  .title{
+    margin-bottom: 60px;
+  }
 }
 
 
 .howtowork__video{
-  width: 60%;
+  width: 52%;
   float: left;
   position: relative;
   background-repeat: no-repeat;
   background-image: url("../img/ipad.png");
   height: 325px;
   // background-size: contain;
-  video{
-    width: 375px;
-height: 273px;
-position: absolute;
-left: 54px;
+  iframe {
+      width: 386px;
+      height: 290px;
+      position: absolute;
+      left: 46px;
+      top: 15px;
   }
 }
 
 .howtowork__list{
-  width: 40%;
+  width: 42%;
   float: left;
   position: relative;
   padding-left: 55px;

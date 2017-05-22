@@ -13,6 +13,43 @@
   width: 55%;
   float: left;
   position: relative;
+  p{
+    width: 100%;
+    float: left;
+    color: #2e2f30;
+    font-family: $r;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.my-clock.flip-clock-wrapper {
+    width: 100%;
+    float: left;
+    margin: 0;
+    margin-top: 20px;
+}
+.flip-clock-divider .flip-clock-label{
+  color: #4e65a6;
+  font-family: $b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: capitalize;
+  top: 7.5em;
+
+}
+
+.touchscreen_info_title{
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #fb2f2f;
+    font-family: $r;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 24px;
 }
 .touchscreen__form{
   width: 45%;

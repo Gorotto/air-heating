@@ -1,23 +1,160 @@
 @media only screen and (max-width: 1024px) {
-	
+	.header__logo{
+		width: 130px;
+	}
+	.header__top a{
+		font-size: 15px;
+	}
+	.header__top, .header__menu {
+	   width: calc(100% - 140px);
+	}
+	.header__menu li{
+		margin-right: 14px;
+	}
+	.header__menu li a{
+		font-size: 12px;
+	}
+	.tel-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 17px;
+    height: 19px;
+    top: 3px;
+    position: relative;
+	}
+	.header__top .header__callback {
+    float: right;
+    min-width: 130px;
+    height: 30px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+	.header__top select{
+		font-size: 14px;
+		margin: 0;
+	}
+	.video-section__wrap{
+		width: 100%;
+		left: 0;
+		margin-top: -41%;
+	}
+	.video-section h1{
+		font-size: 30px;
+	}
+	.video-section p{
+		font-size: 20px;
+		span{
+			font-size: 20px;
+		}
+	}
+	.video-section a{
+		font-size: 16px;
+	}
+	.video-section a .down-arrow{
+		margin-top: 76px;
+	}
+	.howtowork__video{
+		background-size: 98%;
+	}
+	.howtowork__video iframe {
+    width: 305px;
+    height: 229px;
+    position: absolute;
+    left: 38px;
+    top: 13px;
+	}
+	.gallery-slider {
+    width: 89%;
+	}
+	button.slick-prev.slick-arrow {
+    left: -45px;
+	}
+	button.slick-next.slick-arrow {
+    right: -51px;
+	}
+	.slick-for{
+		.item{
+			width: 100%;
+		}
+	}
+	.about__wrap_thumb{
+		width: 536px;
+		float: none;
+		position: relative;
+		margin: 0 auto;
+	}
+	.about__wrap_text{
+		width: 400px;
+		margin: 20px auto 0;
+		display: inline-block;
+		float: none;
+		height: auto;
+
+	}
+	.touchscreen_info{
+		width: 100%;
+		float: left;
+
+	}
+	.touchscreen_info_pic{
+		width: 100%;
+	}
+	.system{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.system__pic{
+		width: 100%;
+		img{
+			size: 100%;
+		}
+	}
+	.system__wrap{
+		padding: 0;
+
+	}
+	.system__wrap_item{
+		width: 32%;
+	}
+	.contacts__wrap {
+    width: calc(100% - 500px);
+	}
+	#map{
+		width: 500px;
+	}
+	.touchscreen__form{
+		width: 425px;
+		margin: 30px auto 0;
+		float: none;
+		display: inline-block;
+	}
+	.touchscreen{
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 980px) {
-	
+
 }
 
 @media only screen and (max-width: 770px) {
-	
+
 }
 
 @media only screen and (max-width: 736px) {
-	
+	.toggle_mnu{
+		display: block;
+	}
+	.header__menu{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	
+
 }
 
 @media only screen and (max-width: 320px) {
-	
+
 }
