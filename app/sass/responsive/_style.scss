@@ -1,4 +1,23 @@
 @media only screen and (max-width: 1024px) {
+	.error-page__wrap h2{
+		font-size: 88px;
+	}
+	.error-page__wrap p{
+		color: #000;
+	}
+	.error-page__wrap{
+		margin-top: calc(50% - 200px);
+	}
+
+	.thank-page__wrap{
+		width: 80%;
+	}
+	.error-page__wrap .thank-page__logo, .thank-page__wrap .thank-page__logo{
+		margin-left: 0;
+	}
+	.thank-page__wrap {
+    margin-top: calc(50% - 65px);
+	}
 	.title{
 		left: 0;
 		h2{
@@ -155,6 +174,72 @@
 }
 
 @media only screen and (max-width: 736px) {
+	.video-section p{
+		margin: 0;
+		display: none;
+	}
+	.video-section a {
+    min-width: 96%;
+		margin-top: 20px;
+	}
+	.error-page__wrap {
+    margin-top: calc(50% - 120px);
+}
+	.error-page__wrap h1{
+		font-size: 111px;
+		margin-bottom: 24px;
+	}
+	.error-page__wrap h1 span:before {
+		content: "";
+		width: 65px;
+		height: 65px;
+		border: 13.66px solid #fff;
+	}
+	.error-page__wrap h1 span:after {
+		content: "";
+		width: 35px;
+		height: 35px;
+		left: 32%;
+		top: 32%;
+	}
+	.error-page__wrap h2 {
+		font-size: 51px;
+	}
+	.error-page__wrap p{
+		font-size: 20px;
+	}
+	.error-page__wrap a {
+		margin-top: 10px;
+		font-family: TahomaRegular;
+		color: #fff;
+		width: 492px;
+		padding: 15px 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		background-color: #fb2f2f;
+		font-size: 31px;
+		font-weight: 400;
+		float: none;
+		display: inline-block;
+}
+	.error-page__wrap .thank-page__logo, .thank-page__wrap .thank-page__logo{
+		margin: 0 auto 10px;
+		display: inline-block;
+		float: none;
+	}
+	.error-page__wrap h1, .thank-page__wrap h1{
+		width: 100%;
+		text-align: center;
+	}
+	.error-page__wrap p, .thank-page__wrap p{
+		line-height: 35px;
+	}
+	.error-page__wrap, .thank-page__wrap{
+		width: 100%;
+	}
+	.error-page__wrap a, .thank-page__wrap a{
+		width: 100%;
+	}
 	button.slick-prev.slick-arrow {
     left: -28px;
 	}
@@ -298,6 +383,7 @@
 	}
 	.contacts__wrap_row{
 		width: 50%;
+		min-height: 100px;
 	}
 	#map{
 		width: 100%;
@@ -305,14 +391,46 @@
 	.touchscreen__form{
 		width: 100%;
 	}
+	.system__wrap_item span{
+		font-size: 14px;
+	}
+	.system__wrap_item{
+		min-height: 210px;
+		margin-right: 12px;
+		&:nth-of-type(even){
+			margin-right: 12px;
+		}
+		&:nth-of-type(3){
+			margin-right: 12px;
+		}
+	}
 }
 
 @media only screen and (max-width: 500px) {
 	.header__top a {
     font-size: 13px;
-}
+	}
+	.video-section h1 {
+    font-size: 26px;
+	}
+	.video-section a {
+    font-size: 12px;
+	}
+	.howtowork__video iframe {
+    width: 314px;
+    height: 233px;
+    position: absolute;
+    left: 38px;
+    top: 13px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
-
+	.howtowork__video iframe {
+    width: 236px;
+    height: 180px;
+    position: absolute;
+    left: 29px;
+    top: 10px;
+	}
 }

@@ -12,11 +12,17 @@
 .thank-page__wrap, .error-page__wrap{
   width: 70%;
   float: none;
-  margin: 0 auto;
+  // margin: 0 auto;
+  display: inline-block;
+  position: relative;
   .thank-page__logo{
     width: 186px;
     height: 70px;
     float: left;
+    position: relative;
+    top: 15px;
+    margin-right: 55px;
+    margin-left: 42px;
   }
   h1{
     text-transform: uppercase;
@@ -26,6 +32,7 @@
     line-height: 16px;
     font-family: $b;
     float: left;
+    margin-bottom: 70px;
   }
   p{
     width: 100%;
@@ -38,10 +45,11 @@
     margin: 0;
   }
   a{
+    margin-top: 70px;
     font-family: $r;
     color: #fff;
     width: 492px;
-    padding: 35px 0;
+    padding: 15px 0;
     box-sizing: border-box;
     background-color: #fb2f2f;
     font-size: 36px;
@@ -51,7 +59,10 @@
     display: inline-block;
   }
 }
-
+.thank-page__wrap{
+  height: 350px;
+  margin-top: calc(50% - (560px/2))
+}
 .error-page__wrap{
   h1{
     text-shadow: 8.6px 5.2px 0 rgba(38, 55, 110, 0.73);
@@ -60,6 +71,7 @@
     font-size: 150px;
     font-weight: 700;
     line-height: 16px;
+    width: 100%;
     span{
       display: inline-block;
       position: relative;
@@ -99,5 +111,15 @@
     &:after{
       display: none;
     }
+  }
+  p{
+    color: #031430;
+    font-family: $r;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 20px;
   }
 }
