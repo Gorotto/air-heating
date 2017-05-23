@@ -24,6 +24,10 @@
   position: relative;
   text-align: center;
   float: left;
+  img{
+    size: 100%;
+    object-fit: cover;
+  }
 }
 
 

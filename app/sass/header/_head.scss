@@ -202,9 +202,10 @@
 		    position: fixed;
 		    z-index: 3;
 		    border: none;
-		    right: 10px;
-		    top: 20px;
-		    background-color: #ff8b02; }
+        left: 22px;
+        top: 65px;
+        outline: none;
+		    background-color: transparent; }
 		span {
     		display: block; }
 
@@ -224,9 +225,9 @@
 				  top: 0;
 				  width: 34px;
 				  height: 3px;
-				  background: white;
+				  background: #fb2f2f;
 				  border: none;
-				  border-radius: 4px 4px 4px 4px;
+
 				  transition: transform 0.5s, top 0.2s;
 				  display: block; }
 
@@ -235,9 +236,8 @@
 				  width: 34px;
 				  height: 3px;
 				  top: 6.6px;
-				  background: white;
+				  background: #fb2f2f;
 				  border: none;
-				  border-radius: 4px 4px 4px 4px;
 				  transition: transform 0.5s, top 0.2s;
 				  transition-delay: 0.2s, 0; }
 
@@ -246,9 +246,8 @@
 				  width: 34px;
 				  height: 3px;
 				  top: 13.5px;
-				  background: white;
+				  background: #fb2f2f;
 				  border: none;
-				  border-radius: 4px 4px 4px 4px;
 				  transition: all 0.5s;
 				  transition-delay: 0.1s; }
 
