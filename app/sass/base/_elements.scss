@@ -29,6 +29,8 @@ h2{
   text-align: center;
   span{
     color: #fb2f2f;
+    display: inline-block;
+    margin-right: 5px;
     &:before{
       content: "";
       width: 50%;
