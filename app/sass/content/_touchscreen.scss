@@ -97,13 +97,14 @@
   float: left;
   position: relative;
   margin: 7px 0;
-  border: 1px solid #000;
+
   input{
     width: 100%;
     height: 59px;
     background-color: #fff;
     border: none;
     padding-left: 65px;
+    border: 1px solid #000;
     box-sizing: border-box;
     color: #a6a4a4;
     font-family: $r;
@@ -128,9 +129,9 @@
 
 }
 
-.error-inp{
-  border: 1px solid #ff0000;
-}
+// .error-inp{
+//   border: 1px solid #ff0000;
+// }
 .user-pic-icon{
   background-image: url("../img/icons/user-pic.png");
 }
