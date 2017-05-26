@@ -103,21 +103,21 @@
   float: none;
   margin: 80px auto 60px;
   cursor: pointer;
-  &:hover{
-    background-color: #fff;
-    .thumb{
-      background-position: -88px -10px;
-    }
-    .sprites4{
-      background-position: -60px -10px;
-    }
-    .sprites5{
-      background-position: -72px -10px;
-    }
-    .sprites6{
-      background-position: -93px -10px;
-    }
-  }
+  // &:hover{
+  //   background-color: #fff;
+  //   .thumb{
+  //     background-position: -88px -10px;
+  //   }
+  //   .sprites4{
+  //     background-position: -60px -10px;
+  //   }
+  //   .sprites5{
+  //     background-position: -72px -10px;
+  //   }
+  //   .sprites6{
+  //     background-position: -93px -10px;
+  //   }
+  // }
 }
 
 .hexagon:before,

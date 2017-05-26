@@ -302,7 +302,7 @@
 		background-color: #fff;
 		padding: 10px;
 		box-sizing: border-box;
-		margin-top: 1px;
+		margin-top: 13px;
 		li{
 			margin: 3px 0;
 		}
@@ -450,6 +450,13 @@
 			margin-right: 12px;
 		}
 	}
+	.about__wrap_text{
+		width: 100%;
+	}
+	.contacts__wrap_row a, .contacts__wrap_row p{
+		font-size: 13px;
+		padding-left: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -463,11 +470,11 @@
     font-size: 12px;
 	}
 	.howtowork__video iframe {
-    width: 314px;
-    height: 233px;
-    position: absolute;
-    left: 38px;
-    top: 13px;
+	    width: 281px;
+	    height: 215px;
+	    position: absolute;
+	    left: 33px;
+	    top: 11px;
 	}
 }
 
