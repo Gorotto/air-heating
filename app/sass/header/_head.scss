@@ -160,6 +160,16 @@
   li.active{
     a{
       color: #4e65a6;
+      &:hover{
+        &:after{
+          content: "";
+          background-color: transparent;
+        }
+        &:before{
+          content: "";
+          background-color: transparent;
+        }
+      }
     }
     &:before{
       content: "";

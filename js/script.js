@@ -36,16 +36,7 @@ $(document).ready(function () {
 	});
  /*popup*/
 
- /*smoothScroll*/
-   $('.smoothScroll').click(function (event) {/*функция прокрутки на блок страницы при клике по элементам меню */
-    event.preventDefault();
-    var href = $(this).attr('href');
-    var target = $(href);
-    var top = target.offset().top;
-    $('html,body').animate({scrollTop: top}, 1000);
-    return false;
-  });
- /*smoothScroll*/
+
 
 
  google.maps.event.addDomListener(window, 'load', init);
@@ -140,16 +131,16 @@ function init() {
     });
   /*fixed menu*/
   /*img hover*/
-  $('.hexagon').hover(
-    function(){
-      var imgsrc = $(this).attr('src');
-      $(this).attr('src',$(this).attr('data-full'));
-      $(this).attr('data-full',imgsrc);
-    },function(){
-      var imgsrc = $(this).attr('src');
-      $(this).attr('src',$(this).attr('data-full'));
-      $(this).attr('data-full',imgsrc);
-});
+  // $('img').hover(
+  //   function(){
+  //     var imgsrc = $(this).attr('src');
+  //     $(this).attr('src',$(this).attr('data-full'));
+  //     $(this).attr('data-full',imgsrc);
+  //   },function(){
+  //     var imgsrc = $(this).attr('src');
+  //     $(this).attr('src',$(this).attr('data-full'));
+  //     $(this).attr('data-full',imgsrc);
+// });
   /*img hover*/
 
 });
@@ -193,6 +184,10 @@ var windowWidth = $(window).width();
                 $(".header__menu li a").addClass("fadeInUp animated");
             }
         });
+        $('.smoothScroll').click(function (event) {
+          $('.header__menu').hide();
+          $('.sandwich').removeClass('active');
+        });
     }
 /*hamburger*/
 
@@ -205,4 +200,30 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation();
 });
+
+$('.hexagon').hover(
+  function(){
+    var imgsrc = $(this).find('img').attr('src');
+    $(this).find('img').attr('src',$(this).find('img').attr('data-full'));
+    $(this).find('img').attr('data-full',imgsrc);
+  },function(){
+    var imgsrc = $(this).find('img').attr('src');
+    $(this).find('img').attr('src',$(this).find('img').attr('data-full'));
+    $(this).find('img').attr('data-full',imgsrc);
+});
+
+/*smoothScroll*/
+  $('.smoothScroll').click(function (event) {/*функция прокрутки на блок страницы при клике по элементам меню */
+   event.preventDefault();
+   var href = $(this).attr('href');
+   var target = $(href);
+   var top = target.offset().top;
+   $('html,body').animate({scrollTop: top}, 1000);
+
+     $(".header__menu li").removeClass("active");
+       $(this).closest("li").addClass("active");
+
+   return false;
+ });
+/*smoothScroll*/
 /*new*/
