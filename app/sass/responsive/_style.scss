@@ -190,6 +190,16 @@
 }
 
 @media only screen and (max-width: 736px) {
+	.system__wrap_item:after{
+		display: none;
+	}
+	.fixed-button{
+    margin-top: calc(100% - 158px);
+		display: none;
+	}
+	.system__pic{
+		height: 300px;
+	}
 	.touchscreen_info{
 		padding: 0 5%;
 	}
@@ -305,6 +315,7 @@
 		margin-top: 13px;
 		li{
 			margin: 3px 0;
+			width: 100%;
 		}
 	}
 	.header__menu li.active:after, .header__menu li.active:before{
