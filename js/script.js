@@ -189,17 +189,26 @@ var windowWidth = $(window).width();
           $('.sandwich').removeClass('active');
         });
     }
+    if (windowWidth < 679){
+      $(document).on('click', function(e) {
+        if (!$(e.target).closest(".header").length) {
+          $('.header__menu').hide();
+          $('.sandwich').removeClass('active');
+        }
+        e.stopPropagation();
+      });
+    }
 /*hamburger*/
 
 
 /*new*/
-$(document).on('click', function(e) {
-  if (!$(e.target).closest(".header").length) {
-    $('.header__menu').hide();
-    $('.sandwich').removeClass('active');
-  }
-  e.stopPropagation();
-});
+// $(document).on('click', function(e) {
+//   if (!$(e.target).closest(".header").length) {
+//     $('.header__menu').hide();
+//     $('.sandwich').removeClass('active');
+//   }
+//   e.stopPropagation();
+// });
 
 $('.hexagon').hover(
   function(){
