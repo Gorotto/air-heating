@@ -88,6 +88,23 @@ gulp.task('sass', function () { // Создаем таск Sass
         }));
 });
 
+gulp.task('js-libs', function () {
+    return gulp.src([ // Берем все необходимые библиотеки
+        'app/libs/js-libs/flipclock.min.js',
+        'app/libs/js-libs/fm.revealator.jquery.min.js',
+        'app/libs/js-libs/jquery.magnific-popup.min.js',
+        'app/libs/js-libs/jquery.maskedinput.min.js',
+        // 'app/libs/js-libs/jquery.mousewheel.js',
+        // 'app/libs/js-libs/jquery-2.1.3.min.js',
+        // 'app/libs/js-libs/jquery-ui.min.js',
+        // 'app/libs/js-libs/slick.min.js',
+
+    ])
+        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
+        .pipe(uglify()) // Сжимаем JS файл
+        .pipe(gulp.dest('scripts')); // Выгружаем в папку app/js
+});
+
 gulp.task('browser-sync', function () { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
@@ -132,7 +149,7 @@ gulp.task('extend-blocks', function () {
         .pipe(gulp.dest('./'))
 });
 
-gulp.task('watch', ['browser-sync', 'compress', 'extend-pages', 'css-libs', 'img', 'sass'], function () {
+gulp.task('watch', ['browser-sync', 'compress', 'extend-pages', 'css-libs', 'js-libs', 'img', 'sass'], function () {
     gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
     // gulp.watch('app/libs/**/*', ['js-libs']); // Наблюдение за папкой libs
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
